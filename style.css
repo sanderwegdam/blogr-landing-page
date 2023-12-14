@@ -75,7 +75,7 @@ section {
 
 @media only screen and (max-width: 1440px) {
   .main-container {
-    width: 375px;
+    width: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,8 +102,9 @@ section {
 
   .menu-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
+    position: relative;
   }
 
   .mobile-menu {
@@ -119,8 +120,49 @@ section {
   }
 
   .icon-hamburger {
-    padding-left: 20px;
     padding-top: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-open {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 320px;
+    height: 620px;
+    top: 120px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .product-menu,
+  .company-menu,
+  .connect-menu {
+    display: none;
+  }
+
+  .menu-1 {
+    margin-top: -400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .menu-2 hr {
+    width: 280px;
   }
 
   .header-text {
@@ -141,11 +183,6 @@ section {
     margin: 0 auto;
     padding-block: 20px;
     font-weight: 100;
-  }
-
-  .menu-1,
-  .menu-2 {
-    display: none;
   }
 
   .buttons {
@@ -219,7 +256,8 @@ section {
   }
 
   .phones {
-    width: 97%;
+    width: 80%;
+    display: block;
     margin: auto;
     margin-top: -180px;
   }
@@ -227,12 +265,13 @@ section {
   .background-state-of-the-art {
     background: url("images/bg-pattern-circles.svg"), var(--dark-gray-blue);
     height: 500px;
-    background-position: 0 -60px;
+    background-position: 0 -140px;
     background-size: contain;
     background-repeat: no-repeat;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     margin-top: 250px;
+    display: flex;
   }
 
   .background-state-of-the-art h2,
@@ -248,17 +287,13 @@ section {
     margin-top: -20px;
   }
 
-  picture {
-    display: flex;
-    justify-content: center;
-  }
-
   .laptop {
+    display: block;
     margin: 0 auto;
-    width: 120%;
+    width: 100%;
   }
 
-  /* ---------------footer----------------------------------------------------------------- */
+  /* ------------------- footer ----------------------------------------------------------------- */
   footer {
     margin-top: 100px;
     background: var(--dark-black-blue);
@@ -348,7 +383,7 @@ section {
     margin-left: 100px;
   }
 
-  .desktop-menu {
+  .menu {
     margin-top: 20px;
   }
 
@@ -361,7 +396,7 @@ section {
     display: none;
   }
 
-  .desktop-menu {
+  .menu {
     display: flex;
     justify-content: space-between;
     width: 800px;
@@ -515,7 +550,7 @@ section {
   }
 
   .desktop {
-    width: 200%;
+    width: 100%;
     margin-left: 300px;
     margin-top: -140px;
   }
@@ -569,11 +604,6 @@ section {
   .background-state-of-the-art h2 {
     padding-block: 20px;
     font-size: 34px;
-  }
-
-  picture {
-    display: flex;
-    justify-content: center;
   }
 
   .laptop {

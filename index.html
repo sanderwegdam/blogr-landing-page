@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script defer src="js/click.js"></script>
 
     <title>Frontend Mentor | [Blogr]</title>
   </head>
@@ -30,17 +31,31 @@
               <img src="images/logo.svg" alt="Logo" />
             </div>
             <div class="icon-hamburger">
-              <img src="images/icon-hamburger.svg" alt="icon hamburger" />
+              <img
+                class="toggle-icon-hamburger"
+                src="images/icon-hamburger.svg"
+                alt="icon hamburger"
+              />
             </div>
           </div>
-          <div class="desktop-menu">
+          <div class="menu">
             <div class="menu-1">
               <div>
-                <div>
-                  Product<img
-                    class="icon-arrow"
-                    src="images/icon-arrow-light.svg"
-                  />
+                <div class="product">
+                  <a
+                    >Product
+                    <picture>
+                      <source
+                        media="(max-width:1440px)"
+                        srcset="images/icon-arrow-dark.svg"
+                      />
+                      <img
+                        src="images/icon-arrow-light.svg"
+                        alt="Flowers"
+                        style="width: auto"
+                      />
+                    </picture>
+                  </a>
                 </div>
               </div>
               <div class="product-menu">
@@ -50,12 +65,15 @@
                 <a>Features</a>
                 <a>Integrations</a>
               </div>
-              <div>
+              <div class="company">
                 <a
-                  >Company<img
-                    class="icon-arrow"
-                    src="images/icon-arrow-light.svg"
-                /></a>
+                  ><span>Company</span>
+                  <picture>
+                  <source
+                      media="(max-width:1440px)"
+                      srcset="images/icon-arrow-dark.svg" />
+                    <img src="images/icon-arrow-light.svg" alt="Flowers" style="width: auto" />
+                </a>
               </div>
               <div class="company-menu">
                 <a>About</a>
@@ -64,11 +82,21 @@
                 <a>Careers</a>
               </div>
               <div>
-                <div>
-                  Connect<img
-                    class="icon-arrow"
-                    src="images/icon-arrow-light.svg"
-                  />
+                <div class="connect">
+                  <a>
+                    Connect
+                    <picture>
+                      <source
+                        media="(max-width:1440px)"
+                        srcset="images/icon-arrow-dark.svg"
+                      />
+                      <img
+                        src="images/icon-arrow-light.svg"
+                        alt="Flowers"
+                        style="width: auto"
+                      />
+                    </picture>
+                  </a>
                 </div>
               </div>
               <div class="connect-menu">
@@ -78,6 +106,7 @@
               </div>
             </div>
             <div class="menu-2">
+              <hr>
               <a>Login</a>
               <a>Sign Up</a>
             </div>
@@ -156,7 +185,7 @@
 
       <section class="background-intro">
         <div class="container-content free">
-          <picture>
+          <picture class="content-laptop">
             <source
               media="(max-width:1440px)"
               srcset="images/illustration-laptop-mobile.svg"
