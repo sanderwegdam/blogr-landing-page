@@ -13,7 +13,7 @@ const iconArrowProduct = document.querySelector(".icon-arrow-product");
 const iconArrowCompany = document.querySelector(".icon-arrow-company");
 const iconArrowConnect = document.querySelector(".icon-arrow-connect");
 
-function hideAllMenus(exceptMenu) {
+function hideMenus(exceptMenu) {
   const allMenus = document.querySelectorAll(
     ".product-menu, .company-menu, .connect-menu"
   );
@@ -24,7 +24,7 @@ function hideAllMenus(exceptMenu) {
   });
 }
 
-function hideAllIcons(exceptIcons) {
+function rotateIcons(exceptIcons) {
   const allIcons = document.querySelectorAll(
     ".icon-arrow-product, .icon-arrow-company, .icon-arrow-connect"
   );
@@ -40,8 +40,8 @@ productButton.addEventListener("click", function () {
     productMenu.style.display === "none" ||
     productMenu.style.display === ""
   ) {
-    hideAllMenus(productMenu);
-    hideAllIcons(iconArrowProduct);
+    hideMenus(productMenu);
+    rotateIcons(iconArrowProduct);
     productMenu.style.display = "flex";
     menu.style.height = "500px";
     menu2.style.top = "350px";
@@ -59,8 +59,8 @@ companyButton.addEventListener("click", function () {
     companyMenu.style.display === "none" ||
     companyMenu.style.display === ""
   ) {
-    hideAllMenus(companyMenu);
-    hideAllIcons(iconArrowCompany);
+    hideMenus(companyMenu);
+    rotateIcons(iconArrowCompany);
     companyMenu.style.display = "flex";
     menu.style.height = "500px";
     menu2.style.top = "350px";
@@ -78,8 +78,8 @@ connectButton.addEventListener("click", function () {
     connectMenu.style.display === "none" ||
     connectMenu.style.display === ""
   ) {
-    hideAllMenus(connectMenu);
-    hideAllIcons(iconArrowConnect);
+    hideMenus(connectMenu);
+    rotateIcons(iconArrowConnect);
     connectMenu.style.display = "flex";
     menu.style.height = "500px";
     menu2.style.top = "350px";
