@@ -29,17 +29,24 @@
 ======================================================================================*/
 
 :root {
+  /* CTA text */
   --light-red-text: hsl(356, 100%, 66%);
-  --very-dark-blue-text: hsl(208, 49%, 24%);
+  /* CTA hover background */
   --very-light-red-background: hsl(355, 100%, 74%);
-
+  /* Headings */
+  --very-dark-blue-text: hsl(208, 49%, 24%);
+  /* text */
   --white--text: hsl(0, 0%, 100%);
+  /* Footer text */
   --grayish-blue: hsl(240, 2%, 79%);
+  /* Body */
   --dark-grayish-blue: hsl(207, 13%, 34%);
+  /* Footer */
   --dark-black-blue: hsl(240, 10%, 16%);
-
+  /* Background gradient */
   --very-light-red: hsl(13, 100%, 72%);
   --light-red: hsl(353, 100%, 62%);
+  /* Body background gradient */
   --dark-gray-blue: hsl(237, 17%, 21%);
   --dark-desaturated-blue: hsl(237, 23%, 32%);
 }
@@ -91,13 +98,9 @@ section {
   .background-circles-mobile {
     height: 600px;
     background: url("images/bg-pattern-intro-mobile.svg"),
-      linear-gradient(
-        to right,
-        hsl(6deg 100% 70.59%),
-        hsl(355.57deg 98.88% 65.1%)
-      );
+      linear-gradient(to right, var(--very-light-red), var(--light-red));
     background-size: 300%;
-    background-position: -300px -180px;
+    background-position: -300px -220px;
   }
 
   .menu-container {
@@ -132,7 +135,7 @@ section {
     position: absolute;
     flex-direction: column;
     width: 320px;
-    height: 450px;
+    height: 300px;
     top: 120px;
     font-size: 20px;
     color: black;
@@ -143,32 +146,33 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 
+  .product-wrapper,
+  .company-wrapper,
+  .connect-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .product,
   .company,
   .connect {
     padding: 10px;
-  }
-
-  .product {
-    margin-top: 200px;
+    cursor: pointer;
   }
 
   .product-menu,
   .company-menu,
   .connect-menu {
-    display: flex;
+    display: none;
     background-color: hsl(240deg 6.67% 94.12%);
     flex-direction: column;
     text-align: center;
-    margin-block: 20px;
+    margin-block: 5px;
     align-items: center;
     justify-content: center;
     width: 260px;
     border-radius: 5px;
-  }
-
-  .product-menu {
-    height: 160px;
   }
 
   .company-menu,
@@ -176,24 +180,52 @@ section {
     height: 120px;
   }
 
+  .product-menu {
+    height: 160px;
+  }
+
   .menu-1 {
-    margin-top: -200px;
+    position: absolute;
+    top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: 600;
+    height: 0px;
   }
 
   .menu-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
     font-weight: 600;
+    position: absolute;
+    top: 170px;
   }
 
   .menu-2 hr {
     width: 280px;
+  }
+
+  .login {
+    padding-block: 20px;
+  }
+
+  .sign-up {
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(
+      to right,
+      var(--very-light-red),
+      var(--light-red)
+    );
+    color: white;
+    font-size: 18px;
   }
 
   .header-text {
@@ -446,6 +478,47 @@ section {
     width: 40%;
   }
 
+  .menu-max {
+    height: 20px !important;
+  }
+
+  .product-wrapper,
+  .company-wrapper,
+  .connect-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-menu,
+  .company-menu,
+  .connect-menu {
+    position: absolute;
+    display: none;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+    margin-block: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 130px;
+    border-radius: 5px;
+    font-weight: 500;
+    top: 80px;
+  }
+
+  .product-menu a,
+  .company-menu a,
+  .connect-menu a {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+
   .menu-2 {
     display: flex;
     justify-content: space-between;
@@ -455,10 +528,13 @@ section {
   .menu-2 a {
     padding-inline: 30px;
     border-radius: 50px;
+    height: 40px;
+    padding-top: 10px;
+    margin-top: -10px;
   }
 
   .menu-2 a:hover {
-    background-color: rgba(245, 245, 245, 0.2);
+    background: rgba(245, 245, 245, 0.2);
   }
 
   hr {
