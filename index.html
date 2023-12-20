@@ -1,254 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="js/click.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | [Blogr]</title>
-  </head>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <script defer src="js/click.js"></script>
 
-  <body>
-    <div class="main-container">
-      <header class="background-circles-mobile background-circles-desktop">
-        <div class="menu-container">
-          <div class="mobile-menu">
-            <div class="logo">
-              <img src="images/logo.svg" alt="Logo" />
-            </div>
-            <div class="icon-hamburger">
-              <img
-                class="toggle-icon-hamburger"
-                src="images/icon-hamburger.svg"
-                alt="icon hamburger"
-              />
-            </div>
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="background-circles-mobile background-circles-desktop">
+      <div class="menu-container">
+        <div class="mobile-menu">
+          <div class="logo">
+            <img src="images/logo.svg" alt="Logo" />
           </div>
-          <div class="menu menu-max">
-            <div class="menu-1">
-              <div class="product-wrapper">
-                <div class="product">
-                  <span>Product</span>
-                  <picture>
-                    <source
-                      media="(max-width:1440px)"
-                      srcset="images/icon-arrow-dark.svg"
-                    />
-                    <img
-                      class="icon-arrow-product"
-                      src="images/icon-arrow-light.svg"
-                      alt="icon arrow"
-                      style="width: auto"
-                    />
-                  </picture>
-                </div>
-                <div class="product-menu">
-                  <a>Overview</a>
-                  <a>Pricing</a>
-                  <a>Marketplace</a>
-                  <a>Features</a>
-                  <a>Integrations</a>
-                </div>
-              </div>
-              <div class="company-wrapper">
-                <div class="company">
-                  <span>Company</span>
-                  <picture>
-                    <source
-                      media="(max-width:1440px)"
-                      srcset="images/icon-arrow-dark.svg"
-                    />
-                    <img
-                      class="icon-arrow-company"
-                      src="images/icon-arrow-light.svg"
-                      alt="icon arrow"
-                      style="width: auto"
-                    />
-                  </picture>
-                </div>
-                <div class="company-menu">
-                  <a>About</a>
-                  <a>Team</a>
-                  <a>Blog</a>
-                  <a>Careers</a>
-                </div>
-              </div>
-              <div class="connect-wrapper">
-                <div class="connect">
-                  <span>Connect</span>
-                  <picture>
-                    <source
-                      media="(max-width:1024px)"
-                      srcset="images/icon-arrow-dark.svg"
-                    />
-                    <img class="icon-arrow-connect"
-                      src="images/icon-arrow-light.svg"
-                      alt="icon arrow"
-                      style="width: auto"
-                    />
-                  </picture>
-                </div>
-                <div class="connect-menu">
-                  <a>Contact</a>
-                  <a>Newsletter</a>
-                  <a>LinkedIn</a>
-                </div>
-              </div>
-            </div>
-            <div class="menu-2">
-              <hr />
-              <a class="login">Login</a>
-              <a class="sign-up">Sign Up</a>
-            </div>
+          <div class="icon-hamburger">
+            <img class="toggle-icon-hamburger" src="images/icon-hamburger.svg" alt="icon hamburger" />
           </div>
         </div>
-        <div class="header-text">
-          <h1>A modern publishing platform</h1>
-          <p>Grow your audience and build your online brand</p>
-        </div>
-        <div class="buttons">
-          <a class="btn-1">Start for Free</a>
-          <a class="btn-2">Learn More</a>
-        </div>
-      </header>
-
-      <section class="background-intro">
-        <h1 class="title-designed">Designed for the future</h1>
-        <div class="content">
-          <picture>
-            <source
-              media="(max-width:1024px)"
-              srcset="images/illustration-editor-mobile.svg"
-            />
-            <img
-              class="desktop"
-              src="images/illustration-editor-desktop.svg"
-              alt="editor"
-            />
-          </picture>
-          <div class="blogr-content">
-            <div class="content-item">
-              <h2 class="title-introducing">
-                Introducing an extensible editor
-              </h2>
-              <p class="text-blogr">
-                Blogr features an exceedingly intuitive interface which lets you
-                focus on one thing: creating content. The editor supports
-                management of multiple blogs and allows easy manipulation of
-                embeds such as images, videos, and Markdown. Extensibility with
-                plugins and themes provide easy ways to add functionality or
-                change the looks of a blog.
-              </p>
+        <div class="menu menu-max">
+          <div class="menu-1">
+            <div class="product-wrapper">
+              <div class="product">
+                <span>Product</span>
+                <picture>
+                  <source media="(max-width:767px)" srcset="images/icon-arrow-dark.svg" />
+                  <img class="icon-arrow-product" src="images/icon-arrow-light.svg" alt="icon arrow"
+                    style="width: auto" />
+                </picture>
+              </div>
+              <div class="product-menu">
+                <a>Overview</a>
+                <a>Pricing</a>
+                <a>Marketplace</a>
+                <a>Features</a>
+                <a>Integrations</a>
+              </div>
             </div>
-
-            <div class="content-item">
-              <h2 class="title-robust">Robust content management</h2>
-              <p class="text-flexable">
-                Flexible content management enables users to easily move through
-                posts. Increase the usability of your blog by adding customized
-                categories, sections, format, or flow. With this functionality,
-                you’re in full control.
-              </p>
+            <div class="company-wrapper">
+              <div class="company">
+                <span>Company</span>
+                <picture>
+                  <source media="(max-width:767px)" srcset="images/icon-arrow-dark.svg" />
+                  <img class="icon-arrow-company" src="images/icon-arrow-light.svg" alt="icon arrow"
+                    style="width: auto" />
+                </picture>
+              </div>
+              <div class="company-menu">
+                <a>About</a>
+                <a>Team</a>
+                <a>Blog</a>
+                <a>Careers</a>
+              </div>
+            </div>
+            <div class="connect-wrapper">
+              <div class="connect">
+                <span>Connect</span>
+                <picture>
+                  <source media="(max-width:767px)" srcset="images/icon-arrow-dark.svg" />
+                  <img class="icon-arrow-connect" src="images/icon-arrow-light.svg" alt="icon arrow"
+                    style="width: auto" />
+                </picture>
+              </div>
+              <div class="connect-menu">
+                <a>Contact</a>
+                <a>Newsletter</a>
+                <a>LinkedIn</a>
+              </div>
             </div>
           </div>
+          <div class="menu-2">
+            <hr />
+            <a class="login">Login</a>
+            <a class="sign-up">Sign Up</a>
+          </div>
         </div>
-      </section>
+      </div>
+      <div class="header-text">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+      </div>
+      <div class="buttons">
+        <a class="btn-1">Start for Free</a>
+        <a class="btn-2">Learn More</a>
+      </div>
+    </header>
 
-      <section class="background-state-of-the-art">
-        <div class="container-content">
-          <img
-            class="phones"
-            src="images/illustration-phones.svg"
-            alt="phones"
-          />
-          <div class="content-container state-of-art">
-            <h2 class="title-state-of-art">State of the Art Infrastructure</h2>
-            <p>
-              With reliability and speed in mind, worldwide data centers provide
-              the backbone for ultra-fast connectivity. This ensures your site
-              will load instantly, no matter where your readers are, keeping
-              your site competitive.
+    <section class="background-intro">
+      <h1 class="title-designed">Designed for the future</h1>
+      <div class="content">
+        <picture>
+          <source media="(max-width:1024px)" srcset="images/illustration-editor-mobile.svg" />
+          <img class="desktop" src="images/illustration-editor-desktop.svg" alt="editor" />
+        </picture>
+        <div class="blogr-content">
+          <div class="content-item">
+            <h2 class="title-introducing">
+              Introducing an extensible editor
+            </h2>
+            <p class="text-blogr">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+
+          <div class="content-item">
+            <h2 class="title-robust">Robust content management</h2>
+            <p class="text-flexable">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="background-intro">
-        <div class="container-content free">
-          <picture class="content-laptop">
-            <source
-              media="(max-width:1024px)"
-              srcset="images/illustration-laptop-mobile.svg"
-            />
-            <img
-              class="laptop"
-              src="images/illustration-laptop-desktop.svg"
-              alt="editor"
-            />
-          </picture>
-          <div class="content-container">
-            <div class="content-item">
-              <h2 class="title-free">Free, open, simple</h2>
-              <p class="text-free">
-                Blogr is a free and open source application backed by a large
-                community of helpful developers. It supports features such as
-                code syntax highlighting, RSS feeds, social media integration,
-                third-party commenting tools, and works seamlessly with Google
-                Analytics. The architecture is clean and is relatively easy to
-                learn.
-              </p>
-            </div>
+    <section class="background-state-of-the-art">
+      <div class="container-content">
+        <img class="phones" src="images/illustration-phones.svg" alt="phones" />
+        <div class="content-container state-of-art">
+          <h2 class="title-state-of-art">State of the Art Infrastructure</h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping
+            your site competitive.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <div class="content-item">
-              <h2 class="title-tooling">Powerful tooling</h2>
-              <p class="text-batteries">
-                Batteries included. We built a simple and straightforward CLI
-                tool that makes customization and deployment a breeze, but
-                capable of producing even the most complicated sites.
-              </p>
-            </div>
+    <section class="background-intro">
+      <div class="container-content free">
+        <picture class="content-laptop">
+          <source media="(max-width:1024px)" srcset="images/illustration-laptop-mobile.svg" />
+          <img class="laptop" src="images/illustration-laptop-desktop.svg" alt="editor" />
+        </picture>
+        <div class="content-container">
+          <div class="content-item">
+            <h2 class="title-free">Free, open, simple</h2>
+            <p class="text-free">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as
+              code syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+
+          <div class="content-item">
+            <h2 class="title-tooling">Powerful tooling</h2>
+            <p class="text-batteries">
+              Batteries included. We built a simple and straightforward CLI
+              tool that makes customization and deployment a breeze, but
+              capable of producing even the most complicated sites.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer>
-        <img class="footer-logo" src="images/logo.svg" alt="logo" />
-        <div class="footer-content">
-          <a class="title">Product</a>
-          <a>Overview</a>
-          <a>Pricing</a>
-          <a>Marketplace</a>
-          <a>Features</a>
-          <a>Integrations</a>
-        </div>
-        <div class="footer-content">
-          <a class="title">Company</a>
-          <a>About</a>
-          <a>Team</a>
-          <a>Blog</a>
-          <a>Careers</a>
-        </div>
-        <div class="footer-content">
-          <a class="title">Connect</a>
-          <a>Contact</a>
-          <a>Newsletter</a>
-          <a>LinkedIn</a>
-        </div>
-      </footer>
-    </div>
-  </body>
+    <footer>
+      <img class="footer-logo" src="images/logo.svg" alt="logo" />
+      <div class="footer-content">
+        <a class="title">Product</a>
+        <a>Overview</a>
+        <a>Pricing</a>
+        <a>Marketplace</a>
+        <a>Features</a>
+        <a>Integrations</a>
+      </div>
+      <div class="footer-content">
+        <a class="title">Company</a>
+        <a>About</a>
+        <a>Team</a>
+        <a>Blog</a>
+        <a>Careers</a>
+      </div>
+      <div class="footer-content">
+        <a class="title">Connect</a>
+        <a>Contact</a>
+        <a>Newsletter</a>
+        <a>LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

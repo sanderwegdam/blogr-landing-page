@@ -122,8 +122,8 @@ a {
   }
 
   .logo {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
+    padding-inline: 40px;
   }
 
   .icon-hamburger {
@@ -198,6 +198,11 @@ a {
     height: 0px;
   }
 
+  .menu-1 {
+    justify-content: space-between;
+    width: 300px;
+  }
+
   .menu-2 {
     display: flex;
     flex-direction: column;
@@ -212,8 +217,13 @@ a {
     width: 280px;
   }
 
+  .logo {
+    padding: 20px;
+    padding-inline: 40px;
+  }
+
   .login {
-    padding-block: 20px;
+    padding-block: 10px;
   }
 
   .sign-up {
@@ -409,7 +419,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 1180px) {
+@media only screen and (min-width: 501px) and (max-width: 767px) {
   .main-container {
     width: 100vw;
     display: flex;
@@ -447,8 +457,8 @@ a {
   }
 
   .logo {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
+    padding-inline: 40px;
   }
 
   .icon-hamburger {
@@ -523,6 +533,11 @@ a {
     height: 0px;
   }
 
+  .menu-1 {
+    justify-content: space-between;
+    width: 400px;
+  }
+
   .menu-2 {
     display: flex;
     flex-direction: column;
@@ -537,8 +552,13 @@ a {
     width: 280px;
   }
 
+  .logo {
+    padding: 20px;
+    padding-inline: 40px;
+  }
+
   .login {
-    padding-block: 20px;
+    padding-block: 10px;
   }
 
   .sign-up {
@@ -649,22 +669,24 @@ a {
   }
 
   .phones {
-    width: 80%;
+    width: 70%;
     display: block;
     margin: auto;
-    margin-top: -180px;
+    margin-top: -160px;
   }
 
   .background-state-of-the-art {
     background: url("images/bg-pattern-circles.svg"), var(--dark-gray-blue);
     height: 500px;
-    background-position: 0 -140px;
+    background-position-x: center;
+    background-position-y: -150px;
     background-size: contain;
     background-repeat: no-repeat;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     margin-top: 250px;
     display: flex;
+    justify-content: center;
   }
 
   .background-state-of-the-art h2,
@@ -734,7 +756,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1181px) and (max-width: 1440px)  {
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
   .main-container {
     width: 100vw;
     display: flex;
@@ -773,12 +795,11 @@ a {
     justify-content: space-between;
     width: 20%;
     margin-top: 20px;
-    margin-left: 100px;
   }
 
   .logo {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
+    padding-inline: 40px;
   }
 
   .icon-hamburger {
@@ -788,7 +809,7 @@ a {
   .menu {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 900px;
     margin-top: 35px;
   }
 
@@ -801,7 +822,7 @@ a {
 
   .menu-1 {
     justify-content: space-between;
-    width: 40%;
+    width: 320px;
   }
 
   .menu-max {
@@ -815,6 +836,12 @@ a {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+  }
+
+  .product,
+  .company,
+  .connect {
+    padding-inline: 15px;
   }
 
   .product-menu,
@@ -882,7 +909,6 @@ a {
   .header-text {
     padding-top: 100px;
     margin: 0 auto;
-    width: 900px;
     font-size: 30px;
     color: white;
   }
@@ -890,6 +916,7 @@ a {
   .header-text h1 {
     text-align: center;
     font-weight: 600;
+    margin-inline: 50px;
   }
 
   .header-text p {
@@ -996,19 +1023,19 @@ a {
   .phones {
     width: 50%;
     margin: auto;
-    margin-top: 120px;
   }
 
   .background-state-of-the-art {
     background: url("images/bg-pattern-circles.svg"), var(--dark-gray-blue);
     height: 500px;
     background-position: -100px -400px;
-    background-size: cover 50%;
+    background-size: cover;
     background-repeat: no-repeat;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .container-content {
@@ -1036,7 +1063,7 @@ a {
   .background-state-of-the-art p {
     margin: 0 auto;
     color: white;
-    width: 520px;
+    width: 365px;
   }
 
   .background-state-of-the-art h2 {
@@ -1055,7 +1082,7 @@ a {
     background: var(--dark-black-blue);
     height: 600px;
     display: flex;
-    column-gap: 200px;
+    column-gap: 100px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1085,7 +1112,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 1441px) and (max-width: 1920px)  {
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
   .main-container {
     width: 100vw;
     display: flex;
@@ -1124,12 +1151,11 @@ a {
     justify-content: space-between;
     width: 20%;
     margin-top: 20px;
-    margin-left: 100px;
   }
 
   .logo {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
+    padding-inline: 40px;
   }
 
   .icon-hamburger {
@@ -1139,7 +1165,7 @@ a {
   .menu {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 900px;
     margin-top: 35px;
   }
 
@@ -1152,7 +1178,7 @@ a {
 
   .menu-1 {
     justify-content: space-between;
-    width: 40%;
+    width: 400px;
   }
 
   .menu-max {

@@ -133,7 +133,8 @@ document.addEventListener("click", function (e) {
     // productMenu.style.display = "none";
     // companyMenu.style.display = "none";
     // connectMenu.style.display = "none";
-    // menu.classList.remove("menu-open");
+    menu.classList.remove("menu-open");
     // menu.classList.add("menu");
+    toggleHamburgerIcon.src = "images/icon-hamburger.svg";
   }
 });
