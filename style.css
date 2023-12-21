@@ -996,6 +996,10 @@ a {
     color: var(--very-dark-blue-text);
   }
 
+  .title-free{
+    margin-top: -20px;
+  }
+
   .text-blogr,
   .text-flexable,
   .text-free,
@@ -1012,7 +1016,7 @@ a {
   .blogr-content {
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
+    margin-left: 120px;
   }
 
   .desktop {
@@ -1049,14 +1053,7 @@ a {
     display: flex;
     flex-direction: column;
     text-align: left;
-  }
-
-  .free {
-    margin-top: 100px;
-  }
-
-  .title-free {
-    margin-top: -200px;
+    margin: auto;
   }
 
   .background-state-of-the-art h2,
@@ -1333,7 +1330,6 @@ a {
   .content-item {
     text-align: left;
     width: 502px;
-    margin-left: 220px;
   }
 
   .title-introducing,
@@ -1362,7 +1358,7 @@ a {
   .blogr-content {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 150px;
   }
 
   .desktop {
@@ -1392,14 +1388,8 @@ a {
   .container-content {
     display: flex;
     justify-content: space-between;
-    width: 90%;
     align-items: center;
-  }
-
-  .content-container {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    width: 90%;
   }
 
   .free {
