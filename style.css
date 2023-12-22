@@ -780,8 +780,8 @@ a {
         hsl(6deg 100% 70.59%),
         hsl(355.57deg 98.88% 65.1%)
       );
-    background-size: 300%;
-    background-position: -300px -180px;
+      background-size: 150%;
+      background-position: -300px -600px;
   }
 
   .menu-container {
@@ -1127,14 +1127,14 @@ a {
 
   .background-circles-mobile {
     height: 600px;
-    background: url("images/bg-pattern-intro-mobile.svg"),
+    background: url("images/bg-pattern-intro-desktop.svg"),
       linear-gradient(
         to right,
         hsl(6deg 100% 70.59%),
         hsl(355.57deg 98.88% 65.1%)
       );
-    background-size: 300%;
-    background-position: -300px -180px;
+    background-size: 150%;
+    background-position: -300px -1200px;
   }
 
   .menu-container {
@@ -1389,7 +1389,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 87%;
   }
 
   .free {
@@ -1451,4 +1451,13 @@ a {
     font-weight: bold;
     color: white;
   }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1600px){
+  .container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    }
 }
