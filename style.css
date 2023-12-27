@@ -1382,6 +1382,7 @@ a {
     border-bottom-left-radius: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
   }
 
   .container-content {
