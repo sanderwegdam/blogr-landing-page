@@ -1369,6 +1369,7 @@ a {
 
   .phones {
     width: 40%;
+    width: 536px;
     margin-top: 120px;
   }
 
@@ -1391,17 +1392,6 @@ a {
     align-items: center;
     width: 90%;
   }
-
-  .content-items {
-  }
-
-  /* .container-state-of-art {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 200px;
-    width: 100%;
-  } */
 
   .state-of-art,
   .free {
@@ -1430,7 +1420,7 @@ a {
   }
 
   .laptop {
-    width: 190%;
+    width: 974px;
     margin-left: -400px;
   }
 
